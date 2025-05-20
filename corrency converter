@@ -1,0 +1,55 @@
+# Simple Currency Converter
+
+def currency_converter():
+    Exchange rates (example rates you can update them needed)
+    exchange = {
+        "USD 1.30  # 1 = 1.30
+        "EUR 1.18,  # 1 GBP 1.18
+        "JPY":145.00, # 1 GBP 145.00 J
+        "CAD 1.70  # 1 GBP 1.70
+        "AUD":1.95, # 1 GBP 1.95 AUD        "CHF":1.20   1 GBP = .20 CHF
+ }
+
+    print("Welcome the Simple Currency Converter    print("Supported: " + ", ".(exchange_rates.keys()))
+
+ while True:
+       ("\nMenu:")
+       ("1. Convert to another currency")
+ print("2. Convert currency to GBP")
+ print("3.")
+
+        choice = inputEnter your choice (, 2, or3): ").strip        if choice ==3":
+            print("iting the program.!")
+            break
+ elif choice not in ["1",2"]:
+            printInvalid choice. Please again.")
+            continue
+
+ if choice == "":
+            to_currency input("Enter the target (e.g.,, EUR): ").().upper()
+            if_currency not in exchange:
+                print(" currency. Please try again                continue
+
+           :
+                amount =(input("Enter the amount GBP: ").strip                if amount < 0:
+ print("Amount must be positive. try again.")
+                   
+            except Value:
+                print("Invalid. Please enter a value.")
+                continue            converted_amount = amount exchange_rates[to_currency            print(f"{:.2f} GBP equal to {converted:.2f}to_currency}")
+
+        elif == "2":
+ from_currency = input(" the source currency (.g., USD,): ").strip().upper            if from_currency not exchange_rates:
+               ("Unsupported currency. Please again.")
+                continue            try:
+                = float(input(f" the amount in {_currency}: ").strip())
+ if amount < :
+                    print(" must be positive. Please again.")
+                    continue            except ValueError                print("Invalid amount Please enter a numeric.")
+                continue
+
+           _amount = amount / exchange[from_currency]
+           (f"{amount:.2} {from_currency is equal to {_amount:.2f}")
+
+if __name == "__main__":
+ currency_converter()
